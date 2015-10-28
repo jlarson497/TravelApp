@@ -39,7 +39,6 @@
             this.colDistance = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colLengthTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // cmbStart
@@ -53,7 +52,7 @@
             "San Francisco, CA",
             "Seattle, WA"});
             this.cmbStart.Location = new System.Drawing.Point(127, 11);
-            this.cmbStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbStart.Margin = new System.Windows.Forms.Padding(4);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.Size = new System.Drawing.Size(160, 24);
             this.cmbStart.Sorted = true;
@@ -65,7 +64,7 @@
             this.cmbDestination.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDestination.FormattingEnabled = true;
             this.cmbDestination.Location = new System.Drawing.Point(423, 11);
-            this.cmbDestination.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbDestination.Margin = new System.Windows.Forms.Padding(4);
             this.cmbDestination.Name = "cmbDestination";
             this.cmbDestination.Size = new System.Drawing.Size(160, 24);
             this.cmbDestination.TabIndex = 1;
@@ -100,7 +99,7 @@
             this.colLengthTime,
             this.colPrice});
             this.listView1.Location = new System.Drawing.Point(16, 148);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(512, 262);
             this.listView1.TabIndex = 4;
@@ -133,27 +132,17 @@
             // 
             this.colPrice.Text = "Price";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(311, 57);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 84);
-            this.listBox1.TabIndex = 5;
-            // 
             // frmTravelMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 486);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbDestination);
             this.Controls.Add(this.cmbStart);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTravelMain";
             this.Text = "Travel";
             this.ResumeLayout(false);
@@ -174,7 +163,6 @@
         private System.Windows.Forms.ColumnHeader colDistance;
         private System.Windows.Forms.ColumnHeader colLengthTime;
         private System.Windows.Forms.ColumnHeader colPrice;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
