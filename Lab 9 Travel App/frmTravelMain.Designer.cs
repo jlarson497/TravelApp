@@ -39,6 +39,7 @@
             this.colDistance = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colLengthTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnMakePayment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbStart
@@ -132,11 +133,23 @@
             // 
             this.colPrice.Text = "Price";
             // 
+            // btnMakePayment
+            // 
+            this.btnMakePayment.AutoSize = true;
+            this.btnMakePayment.Location = new System.Drawing.Point(20, 430);
+            this.btnMakePayment.Name = "btnMakePayment";
+            this.btnMakePayment.Size = new System.Drawing.Size(119, 44);
+            this.btnMakePayment.TabIndex = 5;
+            this.btnMakePayment.Text = "&Make a Payment";
+            this.btnMakePayment.UseVisualStyleBackColor = true;
+            this.btnMakePayment.Click += new System.EventHandler(this.btnMakePayment_Click);
+            // 
             // frmTravelMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 486);
+            this.Controls.Add(this.btnMakePayment);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -163,6 +176,7 @@
         private System.Windows.Forms.ColumnHeader colDistance;
         private System.Windows.Forms.ColumnHeader colLengthTime;
         private System.Windows.Forms.ColumnHeader colPrice;
+        private System.Windows.Forms.Button btnMakePayment;
     }
 }
 
