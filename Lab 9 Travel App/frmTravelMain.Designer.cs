@@ -52,7 +52,7 @@
             "Minneapolis, MN",
             "San Francisco, CA",
             "Seattle, WA"});
-            this.cmbStart.Location = new System.Drawing.Point(118, 14);
+            this.cmbStart.Location = new System.Drawing.Point(128, 11);
             this.cmbStart.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.Size = new System.Drawing.Size(160, 24);

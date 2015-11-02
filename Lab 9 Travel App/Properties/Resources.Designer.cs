@@ -63,9 +63,9 @@ namespace Lab_9_Travel_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap default_qrcode {
+        internal static System.Drawing.Bitmap unnamed {
             get {
-                object obj = ResourceManager.GetObject("default_qrcode", resourceCulture);
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

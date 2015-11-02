@@ -32,7 +32,6 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdoBitcoin = new System.Windows.Forms.RadioButton();
-            this.rdoCash = new System.Windows.Forms.RadioButton();
             this.rdoCreditCard = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lstCreditCardType = new System.Windows.Forms.ListBox();
@@ -41,10 +40,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cboExpirationMonth = new System.Windows.Forms.ComboBox();
             this.cboExpirationYear = new System.Windows.Forms.ComboBox();
-            this.pctBitCoinImage2 = new System.Windows.Forms.PictureBox();
-            this.pctBitCoinImage1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBitcoinAccountNumber = new System.Windows.Forms.TextBox();
+            this.pctBitCoinImage2 = new System.Windows.Forms.PictureBox();
+            this.pctBitCoinImage1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBitCoinImage2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBitCoinImage1)).BeginInit();
@@ -73,7 +72,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rdoBitcoin);
-            this.groupBox1.Controls.Add(this.rdoCash);
             this.groupBox1.Controls.Add(this.rdoCreditCard);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
@@ -85,7 +83,7 @@
             // rdoBitcoin
             // 
             this.rdoBitcoin.AutoSize = true;
-            this.rdoBitcoin.Location = new System.Drawing.Point(219, 36);
+            this.rdoBitcoin.Location = new System.Drawing.Point(133, 36);
             this.rdoBitcoin.Name = "rdoBitcoin";
             this.rdoBitcoin.Size = new System.Drawing.Size(71, 20);
             this.rdoBitcoin.TabIndex = 2;
@@ -93,17 +91,6 @@
             this.rdoBitcoin.Text = "BitCoin";
             this.rdoBitcoin.UseVisualStyleBackColor = true;
             this.rdoBitcoin.CheckedChanged += new System.EventHandler(this.rdoBitcoin_CheckedChanged);
-            // 
-            // rdoCash
-            // 
-            this.rdoCash.AutoSize = true;
-            this.rdoCash.Location = new System.Drawing.Point(109, 36);
-            this.rdoCash.Name = "rdoCash";
-            this.rdoCash.Size = new System.Drawing.Size(104, 20);
-            this.rdoCash.TabIndex = 1;
-            this.rdoCash.TabStop = true;
-            this.rdoCash.Text = "Cash Money";
-            this.rdoCash.UseVisualStyleBackColor = true;
             // 
             // rdoCreditCard
             // 
@@ -115,6 +102,7 @@
             this.rdoCreditCard.TabStop = true;
             this.rdoCreditCard.Text = "Credit Card";
             this.rdoCreditCard.UseVisualStyleBackColor = true;
+            this.rdoCreditCard.CheckedChanged += new System.EventHandler(this.rdoCreditCard_CheckedChanged);
             // 
             // label1
             // 
@@ -165,39 +153,17 @@
             this.cboExpirationMonth.FormattingEnabled = true;
             this.cboExpirationMonth.Location = new System.Drawing.Point(122, 258);
             this.cboExpirationMonth.Name = "cboExpirationMonth";
-            this.cboExpirationMonth.Size = new System.Drawing.Size(121, 24);
+            this.cboExpirationMonth.Size = new System.Drawing.Size(155, 24);
             this.cboExpirationMonth.TabIndex = 8;
             // 
             // cboExpirationYear
             // 
             this.cboExpirationYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboExpirationYear.FormattingEnabled = true;
-            this.cboExpirationYear.Location = new System.Drawing.Point(250, 257);
+            this.cboExpirationYear.Location = new System.Drawing.Point(294, 257);
             this.cboExpirationYear.Name = "cboExpirationYear";
             this.cboExpirationYear.Size = new System.Drawing.Size(121, 24);
             this.cboExpirationYear.TabIndex = 9;
-            // 
-            // pctBitCoinImage2
-            // 
-            this.pctBitCoinImage2.Image = global::Lab_9_Travel_App.Properties.Resources.default_qrcode;
-            this.pctBitCoinImage2.Location = new System.Drawing.Point(325, 287);
-            this.pctBitCoinImage2.Name = "pctBitCoinImage2";
-            this.pctBitCoinImage2.Size = new System.Drawing.Size(194, 193);
-            this.pctBitCoinImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pctBitCoinImage2.TabIndex = 11;
-            this.pctBitCoinImage2.TabStop = false;
-            // 
-            // pctBitCoinImage1
-            // 
-            this.pctBitCoinImage1.Image = global::Lab_9_Travel_App.Properties.Resources.weAcceptBitcoin;
-            this.pctBitCoinImage1.InitialImage = global::Lab_9_Travel_App.Properties.Resources.weAcceptBitcoin;
-            this.pctBitCoinImage1.Location = new System.Drawing.Point(13, 307);
-            this.pctBitCoinImage1.Margin = new System.Windows.Forms.Padding(0);
-            this.pctBitCoinImage1.Name = "pctBitCoinImage1";
-            this.pctBitCoinImage1.Size = new System.Drawing.Size(290, 111);
-            this.pctBitCoinImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pctBitCoinImage1.TabIndex = 10;
-            this.pctBitCoinImage1.TabStop = false;
             // 
             // label4
             // 
@@ -214,6 +180,28 @@
             this.txtBitcoinAccountNumber.Name = "txtBitcoinAccountNumber";
             this.txtBitcoinAccountNumber.Size = new System.Drawing.Size(290, 22);
             this.txtBitcoinAccountNumber.TabIndex = 13;
+            // 
+            // pctBitCoinImage2
+            // 
+            this.pctBitCoinImage2.Image = global::Lab_9_Travel_App.Properties.Resources.unnamed;
+            this.pctBitCoinImage2.Location = new System.Drawing.Point(325, 287);
+            this.pctBitCoinImage2.Name = "pctBitCoinImage2";
+            this.pctBitCoinImage2.Size = new System.Drawing.Size(219, 193);
+            this.pctBitCoinImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pctBitCoinImage2.TabIndex = 11;
+            this.pctBitCoinImage2.TabStop = false;
+            // 
+            // pctBitCoinImage1
+            // 
+            this.pctBitCoinImage1.Image = global::Lab_9_Travel_App.Properties.Resources.weAcceptBitcoin;
+            this.pctBitCoinImage1.InitialImage = global::Lab_9_Travel_App.Properties.Resources.weAcceptBitcoin;
+            this.pctBitCoinImage1.Location = new System.Drawing.Point(13, 307);
+            this.pctBitCoinImage1.Margin = new System.Windows.Forms.Padding(0);
+            this.pctBitCoinImage1.Name = "pctBitCoinImage1";
+            this.pctBitCoinImage1.Size = new System.Drawing.Size(290, 111);
+            this.pctBitCoinImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pctBitCoinImage1.TabIndex = 10;
+            this.pctBitCoinImage1.TabStop = false;
             // 
             // frmPayment
             // 
@@ -256,7 +244,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdoBitcoin;
-        private System.Windows.Forms.RadioButton rdoCash;
         private System.Windows.Forms.RadioButton rdoCreditCard;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstCreditCardType;
