@@ -43,6 +43,8 @@
             this.cboExpirationYear = new System.Windows.Forms.ComboBox();
             this.pctBitCoinImage2 = new System.Windows.Forms.PictureBox();
             this.pctBitCoinImage1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtBitcoinAccountNumber = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBitCoinImage2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBitCoinImage1)).BeginInit();
@@ -90,6 +92,7 @@
             this.rdoBitcoin.TabStop = true;
             this.rdoBitcoin.Text = "BitCoin";
             this.rdoBitcoin.UseVisualStyleBackColor = true;
+            this.rdoBitcoin.CheckedChanged += new System.EventHandler(this.rdoBitcoin_CheckedChanged);
             // 
             // rdoCash
             // 
@@ -196,12 +199,30 @@
             this.pctBitCoinImage1.TabIndex = 10;
             this.pctBitCoinImage1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 436);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Bitcoin Account Number:";
+            // 
+            // txtBitcoinAccountNumber
+            // 
+            this.txtBitcoinAccountNumber.Location = new System.Drawing.Point(13, 457);
+            this.txtBitcoinAccountNumber.Name = "txtBitcoinAccountNumber";
+            this.txtBitcoinAccountNumber.Size = new System.Drawing.Size(290, 22);
+            this.txtBitcoinAccountNumber.TabIndex = 13;
+            // 
             // frmPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 575);
             this.ControlBox = false;
+            this.Controls.Add(this.txtBitcoinAccountNumber);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.pctBitCoinImage2);
             this.Controls.Add(this.pctBitCoinImage1);
             this.Controls.Add(this.cboExpirationYear);
@@ -219,6 +240,7 @@
             this.MinimizeBox = false;
             this.Name = "frmPayment";
             this.Text = "Payment Form";
+            this.Load += new System.EventHandler(this.frmPayment_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBitCoinImage2)).EndInit();
@@ -245,5 +267,7 @@
         private System.Windows.Forms.ComboBox cboExpirationYear;
         private System.Windows.Forms.PictureBox pctBitCoinImage1;
         private System.Windows.Forms.PictureBox pctBitCoinImage2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBitcoinAccountNumber;
     }
 }

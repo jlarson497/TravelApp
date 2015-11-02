@@ -57,7 +57,20 @@ namespace Lab_9_Travel_App
 
         }
 
+        //Broken Button don't use
         private void btnMakePayment_Click(object sender, System.EventArgs e)
+        {
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //Click to open payment form
+        private void btnMakePayment_Click_1(object sender, EventArgs e)
         {
             Form paymentForm = new frmPayment();
             paymentForm.ShowDialog();

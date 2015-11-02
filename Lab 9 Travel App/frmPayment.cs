@@ -26,5 +26,31 @@ namespace Lab_9_Travel_App
         {
             this.Close();
         }
+
+        private void rdoBitcoin_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoBitcoin.Checked)
+            {
+                pctBitCoinImage1.Visible = true;
+                pctBitCoinImage2.Visible = true;
+                txtBitcoinAccountNumber.Visible = true;
+                label4.Visible = true;
+            }
+            else 
+            {
+                pctBitCoinImage1.Visible = false;
+                pctBitCoinImage2.Visible = false;
+                txtBitcoinAccountNumber.Visible = false;
+                label4.Visible = false;
+            }
+        }
+
+        private void frmPayment_Load(object sender, EventArgs e)
+        {
+            pctBitCoinImage1.Visible = false;
+            pctBitCoinImage2.Visible = false;
+            txtBitcoinAccountNumber.Visible = false;
+            label4.Visible = false;
+        }
     }
 }

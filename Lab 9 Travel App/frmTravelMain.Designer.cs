@@ -52,8 +52,8 @@
             "Minneapolis, MN",
             "San Francisco, CA",
             "Seattle, WA"});
-            this.cmbStart.Location = new System.Drawing.Point(127, 11);
-            this.cmbStart.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbStart.Location = new System.Drawing.Point(118, 14);
+            this.cmbStart.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.Size = new System.Drawing.Size(160, 24);
             this.cmbStart.Sorted = true;
@@ -64,8 +64,8 @@
             // 
             this.cmbDestination.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDestination.FormattingEnabled = true;
-            this.cmbDestination.Location = new System.Drawing.Point(423, 11);
-            this.cmbDestination.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbDestination.Location = new System.Drawing.Point(397, 14);
+            this.cmbDestination.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cmbDestination.Name = "cmbDestination";
             this.cmbDestination.Size = new System.Drawing.Size(160, 24);
             this.cmbDestination.TabIndex = 1;
@@ -83,12 +83,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(327, 15);
+            this.label2.Location = new System.Drawing.Point(307, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Destination: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // listView1
             // 
@@ -99,8 +100,8 @@
             this.colDistance,
             this.colLengthTime,
             this.colPrice});
-            this.listView1.Location = new System.Drawing.Point(16, 148);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
+            this.listView1.Location = new System.Drawing.Point(21, 182);
+            this.listView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(512, 262);
             this.listView1.TabIndex = 4;
@@ -136,26 +137,26 @@
             // btnMakePayment
             // 
             this.btnMakePayment.AutoSize = true;
-            this.btnMakePayment.Location = new System.Drawing.Point(20, 430);
+            this.btnMakePayment.Location = new System.Drawing.Point(21, 481);
             this.btnMakePayment.Name = "btnMakePayment";
-            this.btnMakePayment.Size = new System.Drawing.Size(119, 44);
+            this.btnMakePayment.Size = new System.Drawing.Size(129, 51);
             this.btnMakePayment.TabIndex = 5;
-            this.btnMakePayment.Text = "&Make a Payment";
+            this.btnMakePayment.Text = "Make a payment";
             this.btnMakePayment.UseVisualStyleBackColor = true;
-            this.btnMakePayment.Click += new System.EventHandler(this.btnMakePayment_Click);
+            this.btnMakePayment.Click += new System.EventHandler(this.btnMakePayment_Click_1);
             // 
             // frmTravelMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 486);
+            this.ClientSize = new System.Drawing.Size(945, 598);
             this.Controls.Add(this.btnMakePayment);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbDestination);
             this.Controls.Add(this.cmbStart);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmTravelMain";
             this.Text = "Travel";
             this.ResumeLayout(false);
