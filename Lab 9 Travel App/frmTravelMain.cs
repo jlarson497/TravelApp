@@ -17,6 +17,8 @@ namespace Lab_9_Travel_App
             InitializeComponent();
         }
 
+        List<Segment> Segments = new List<Segment>();
+
         //Select value from combo box to change Destination combo box
         private void ChangeDestinationCollection(object sender, EventArgs e)
         {
@@ -52,10 +54,7 @@ namespace Lab_9_Travel_App
             }
         }
 
-        private void ChangeDestinationCollection()
-        {
 
-        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -68,6 +67,13 @@ namespace Lab_9_Travel_App
         {
             Form paymentForm = new frmPayment();
             paymentForm.ShowDialog();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Segment nextSegment = new Segment();
+            nextSegment.Departure = cmbStart.Text;
+            nextSegment.Destination = cmbDestination.Text;
         }
     }
 }
