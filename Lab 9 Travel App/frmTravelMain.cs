@@ -17,6 +17,7 @@ namespace Lab_9_Travel_App
             InitializeComponent();
         }
 
+        //Select value from combo box to change Destination combo box
         private void ChangeDestinationCollection(object sender, EventArgs e)
         {
             cmbDestination.Items.Clear();
@@ -54,6 +55,19 @@ namespace Lab_9_Travel_App
         private void ChangeDestinationCollection()
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //Click to open payment form
+        private void btnMakePayment_Click_1(object sender, EventArgs e)
+        {
+            Form paymentForm = new frmPayment();
+            paymentForm.ShowDialog();
         }
     }
 }
